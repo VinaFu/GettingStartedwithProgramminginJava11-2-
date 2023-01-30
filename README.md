@@ -23,8 +23,64 @@ Section Two (Start with unit 5)
 
     Array: 
     1) float[] name = {item, items, itemss};
-        can be double[] new = {....}
+            // can be double[] new = {....}
+            // double[] results = new double[opCodeas.length]
+            // the number inside the last bracket indicates how many items.
     2) float new[0] 
         indicate each item
+    
+    
+    
+        package com.pluralsight.letsgetlogical;
+        public class Main {
+            public static void main(String[] args) {
+
+                double[] leftVals = {100.0d, 25.0d, 225.0d, 11.0d};
+                double[] rightVals = {50.0d, 92.d, 17.0d, 3.0d};
+                char[] opCodes = {'d', 'a', 's', 'm'};
+                double[] results = new double[opCodes.length];
+
+                for(int i =0; i < opCodes.length; i++) {
+                    switch (opCodes[i]) {
+                        case 'a':
+                            results[i] = leftVals[i] + rightVals[i];
+                            break;
+                        case 's':
+                            results[i] = leftVals[i] - rightVals[i];
+                            break;
+                        case 'm':
+                            results[i] = leftVals[i] * rightVals[i];
+                            break;
+                        case 'd':
+                            results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0d;
+                            break;
+                        default:
+                            System.out.println("Invalid opCode: " + opCodes[i]);
+                            results[i] = 0.0d;
+                            break;
+                    }
+                }
+                for(double currentResult : results)
+                        // after for-loop, each item return current results
+                    System.out.println(currentResult);
+            }
+        }
         
+        
+6. Understanding the methods -- calling/  
+        double result = calculateInterest(100d, 0.05d, 10);
+        System.out.println(result); // 50.0
+        
+        static double calculateInterest(double amt, double rate, int year){
+            double interest = amt * rate * years;
+            return interest;
+        }               // you can call the calculatInternate first, define, then call. Before the call, you can have a " static"
+                        // return a value
+
+
+
+
+
+
+
 
