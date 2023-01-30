@@ -85,9 +85,9 @@ Section Two (Start with unit 5)
               3) executive in the terminal: Main a value1 value2
 
 
-        So main is to launch all the processures and then define each function
-        Pay attention to private static and public static when define a function
-        private static - can be access from the within the class only; public static - can be access both within and outside the class.
+    So main is to launch all the processures and then define each function
+    Pay attention to private static and public static when define a function
+    Private static - can be access from the within the class only; public static - can be access both within and outside the class.
         
                 package com.pluralsight.letsgetlogical;
                 public class Main {
